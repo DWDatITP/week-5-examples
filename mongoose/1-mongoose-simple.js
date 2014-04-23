@@ -9,14 +9,19 @@ var Person = mongoose.model('Person', {
 
 var person = new Person({
     name: 'Mike',
-    awesome: true,
+    active: true,
     dateAdded: Date()
 });
+
+// save the person
 person.save(function (err) {
     if (err) {
         // handle errors here
         console.log('Error!');
     }
   console.log('Record saved!');
+
+  mongoose.disconnect();
+
 });
 
