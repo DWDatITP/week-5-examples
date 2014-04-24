@@ -7,8 +7,8 @@ app.set('port', process.env.PORT || 3000);
 
 // connect to mongo
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://people:people@ds049237.mongolab.com:49237/dwd-2014');
 // mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://people:X9bDrVfQB4midTwv@ds049237.mongolab.com:49237/dwd-2014');
 
 // define a schema
 var Person = mongoose.model('Person', {
